@@ -1,0 +1,162 @@
+@import '../../common-styles/variable.scss';
+
+.col_review_otr {
+    .col_review_inr {
+        background-color: $White;
+        border: 1px solid $Light-Bg2;
+        padding: 24px 28px;
+
+        @media (max-width: 575px) {
+            padding: 20px;
+        }
+
+        .card_heading {
+            color: $Dark;
+            margin-bottom: 24px;
+
+            @media (max-width: 575px) {
+                font-size: 16px;
+                line-height: 28px;
+                margin-bottom: 16px;
+            }
+        }
+
+        .profile_star_otr {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media (max-width: 575px) {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+        }
+
+        .profile_otr {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            &:hover {
+                .userName {
+                    color: $Primary;
+
+                    .userName_inr {
+                        color: $Dark;
+                    }
+                }
+            }
+
+            .profile_img {
+                width: 52px;
+                height: 52px;
+                border-radius: 100%;
+                object-fit: cover;
+            }
+
+            .userName {
+                color: $Dark;
+                transition: .3s;
+
+                .userName_inr {
+                    color: $Dark-65;
+                    padding-left: 12px;
+                    border-left: 1px solid $Light-Bg2;
+                    margin-left: 12px;
+                    transition: .3s;
+                }
+            }
+        }
+
+        .star_ul {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            .star_li {
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3) {
+                    svg {
+                        color: $Primary;
+                    }
+                }
+            }
+
+            svg {
+                color: $Dark-25;
+            }
+        }
+    }
+}
+
+.ReviewSection_main {
+    padding: 128px 0;
+    overflow: hidden;
+    background-color: $Light-Bg;
+
+    @media (max-width: 992px) {
+        padding: 72px 0;
+    }
+
+    @media (max-width: 575px) {
+        padding: 48px 0;
+    }
+
+    .wrapper {
+        text-align: center;
+        margin-bottom: 48px;
+
+        @media (max-width: 992px) {
+            margin-bottom: 36px;
+        }
+
+        .wrapper_heading {
+            color: $Dark;
+            margin-bottom: 16px;
+        }
+
+        .wrapper_desc {
+            color: $Dark-65;
+        }
+    }
+
+    .row_custom {
+        justify-content: center;
+
+        .mySwiper {
+            padding-bottom: 48px;
+        }
+
+        .col_slider_otr {
+            padding: 0;
+
+            .profile_star_otr {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+        }
+    }
+
+    .swiper-pagination,
+    .swiper-pagination-horizontal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 0 !important;
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: $Dark;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: $Primary;
+        }
+    }
+}

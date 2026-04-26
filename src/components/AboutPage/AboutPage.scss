@@ -1,0 +1,116 @@
+@import '../../common-styles/variable.scss';
+
+.aboutSection_main {
+    padding-top: 96px;
+
+    @media (max-width: 992px) {
+        padding-top: 72px;
+    }
+
+    @media (max-width: 575px) {
+        padding-top: 48px;
+    }
+
+    .row_custom {
+        align-items: center;
+
+        @media (max-width: 992px) {
+            gap: 72px 0;
+
+            .col_img_otr,
+            .col_content_otr {
+                padding: 0;
+            }
+        }
+
+        @media (max-width: 575px) {
+            gap: 48px 0;
+        }
+
+        .col_content_inr {
+            padding-right: 48px;
+
+            .about_heading {
+                color: $Dark;
+                margin-bottom: 16px;
+            }
+
+            .about_desc {
+                color: $Dark-65;
+
+                &:not(:last-child) {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+
+        .col_img_inr {
+            padding: 24px;
+            border: 1px solid $Light-Bg2;
+
+            @media (max-width: 575px) {
+                padding: 10px;
+            }
+
+            .about_img {
+                width: 100%;
+                height: 500px;
+                object-fit: cover;
+
+                @media (max-width: 992px) {
+                    height: 400px;
+                }
+
+                @media (max-width: 575px) {
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+
+.customer_message_main {
+    padding-top: 72px;
+
+    @media (max-width: 992px) {
+        padding-top: 48px;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .heading_otr {
+            width: 30%;
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+
+            .message_heading {
+                color: $Dark;
+            }
+        }
+
+        .message_otr {
+            padding: 24px 32px;
+            flex: 1;
+            background-color: $White;
+            box-shadow: $Box-Shadow-Custom;
+
+            @media (max-width: 575px) {
+                padding: 20px;
+            }
+
+            .desc {
+                color: $Dark-65;
+            }
+        }
+    }
+}

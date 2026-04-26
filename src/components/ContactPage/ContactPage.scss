@@ -1,0 +1,65 @@
+@import '../../common-styles/variable.scss';
+
+.ContactSection_main {
+    padding: 128px 0;
+
+    @media (max-width: 992px) {
+        padding: 72px 0;
+    }
+
+    @media (max-width: 575px) {
+        padding: 48px 0;
+    }
+
+    .row_custom {
+        align-items: center;
+
+        @media (max-width: 992px) {
+            gap: 72px 0;
+        }
+
+        @media (max-width: 575px) {
+            gap: 48px 0;
+        }
+
+        .col_content_inr {
+            .contact_heading {
+                color: $Dark;
+                margin-bottom: 24px;
+            }
+
+            .form_input {
+                width: 100%;
+                margin-bottom: 24px;
+            }
+
+            .form_textarea {
+                width: 100%;
+                height: 110px;
+                margin-bottom: 24px;
+                resize: none;
+            }
+        }
+
+        .col_img_inr {
+            padding-left: 48px;
+
+            @media (max-width: 992px) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-left: 0;
+            }
+
+            .contact_img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+
+                @media (max-width: 992px) {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}

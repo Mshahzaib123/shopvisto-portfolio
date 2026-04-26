@@ -1,0 +1,221 @@
+@import './common-styles/variable.scss';
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font-family-Medium;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    @media (max-width: 992px) {
+        padding: 0 15px;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+.heading-h1 {
+    font-size: $font-size-60px;
+    line-height: $line-height-72px;
+    font-family: $font-family-SemiBold;
+
+    @media (max-width: 768px) {
+        font-size: $font-size-48px;
+        line-height: $line-height-64px;
+    }
+
+    @media (max-width: 575px) {
+        font-size: 36px;
+        line-height: 48px;
+    }
+}
+
+.heading-h2 {
+    font-size: $font-size-48px;
+    line-height: $line-height-64px;
+    font-family: $font-family-SemiBold;
+
+    @media (max-width: 768px) {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    @media (max-width: 575px) {
+        font-size: 28px;
+        line-height: 48px;
+    }
+}
+
+.heading-h3 {
+    font-size: $font-size-24px;
+    line-height: $line-height-36px;
+    font-family: $font-family-SemiBold;
+}
+
+.heading-lb {
+    font-size: $font-size-20px;
+    line-height: $line-height-32px;
+    font-family: $font-family-SemiBold;
+}
+
+.heading-l {
+    font-size: $font-size-20px;
+    line-height: $line-height-32px;
+    font-family: $font-family-Regular;
+}
+
+.heading-mb {
+    font-size: $font-size-18px;
+    line-height: $line-height-30px;
+    font-family: $font-family-SemiBold;
+}
+
+.heading-mm {
+    font-size: $font-size-18px;
+    line-height: $line-height-30px;
+    font-family: $font-family-Medium;
+}
+
+.heading-m {
+    font-size: $font-size-18px;
+    line-height: $line-height-30px;
+    font-family: $font-family-Regular;
+}
+
+.heading-sb {
+    font-size: $font-size-16px;
+    line-height: $line-height-28px;
+    font-family: $font-family-Bold;
+}
+
+.heading-s-semi {
+    font-size: $font-size-16px;
+    line-height: $line-height-28px;
+    font-family: $font-family-SemiBold;
+}
+
+.heading-sm {
+    font-size: $font-size-16px;
+    line-height: $line-height-28px;
+    font-family: $font-family-Medium;
+}
+
+.heading-s {
+    font-size: $font-size-16px;
+    line-height: $line-height-28px;
+    font-family: $font-family-Regular;
+}
+
+.heading-xs {
+    font-size: $font-size-14px;
+    line-height: $line-height-26px;
+    font-family: $font-family-Regular;
+}
+
+.heading-xsm {
+    font-size: $font-size-14px;
+    line-height: $line-height-26px;
+    font-family: $font-family-Medium;
+}
+
+.heading-xsb {
+    font-size: $font-size-14px;
+    line-height: $line-height-26px;
+    font-family: $font-family-SemiBold;
+}
+
+.heading-xxs {
+    font-size: $font-size-12px;
+    line-height: $line-height-20px;
+    font-family: $font-family-Regular;
+}
+
+.heading-xxsb {
+    font-size: $font-size-12px;
+    line-height: $line-height-20px;
+    font-family: $font-family-SemiBold;
+}
+
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: $Light-Bg;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $Primary;
+    transition: .3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $Dark;
+}
+
+.loader {
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+
+    .spinner-border {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+    }
+}

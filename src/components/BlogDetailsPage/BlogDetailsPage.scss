@@ -1,0 +1,447 @@
+@import '../../common-styles/variable.scss';
+
+.UserReviewCard_otr {
+    .UserReviewCard_inr {
+        background-color: $White;
+        border: 1px solid $Light-Bg2;
+        padding: 24px 24px 20px 24px;
+        transition: .3s;
+
+        @media (max-width: 575px) {
+            padding: 20px;
+        }
+
+        &:hover {
+            box-shadow: $Box-Shadow-Custom;
+            border: 1px solid transparent;
+        }
+
+        .card_heading {
+            color: $Dark-65;
+        }
+
+        .profile_icons_otr {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+
+            @media (max-width: 450px) {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+                margin-bottom: 16px;
+            }
+
+            .profile_otr {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                &:hover {
+                    .userName {
+                        color: $Primary;
+                    }
+                }
+
+                .profile_img {
+                    width: 52px;
+                    height: 52px;
+                    object-fit: cover;
+                }
+
+                .userName {
+                    color: $Dark;
+                    transition: .3s;
+                }
+
+                .dateText {
+                    color: $Dark-65;
+                }
+            }
+
+            .social_ul {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                .social_linkk {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    background-color: $Light-Bg;
+                    transition: .3s;
+
+                    &:hover {
+                        background-color: $Primary;
+
+                        svg {
+                            color: $Dark;
+                        }
+                    }
+
+                    svg {
+                        color: $Dark-65;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.BlogDetailsPage_main {
+    .blog_detail {
+        padding: 96px 0 128px 0;
+
+        @media (max-width: 992px) {
+            padding: 72px 0;
+        }
+
+        @media (max-width: 575px) {
+            padding: 48px 0;
+        }
+
+        .row_custom {
+            @media (max-width: 992px) {
+                gap: 48px 0;
+
+                .col_content_otr,
+                .col_sidebar_otr {
+                    padding: 0;
+                }
+            }
+
+            .col_content_inr {
+                .tag_otr {
+                    display: inline-flex;
+                    background-color: $Light-Bg;
+                    padding: 6px 16px;
+                    transition: .3s;
+
+                    &:hover {
+                        background-color: $Primary;
+                    }
+
+                    .tag_text {
+                        color: $Dark;
+                    }
+                }
+
+                .heading_details {
+                    color: $Dark;
+                    margin: 16px 0 24px 0;
+                }
+
+                .profile_social_otr {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 16px;
+                    border: 1px solid $Light-Bg2;
+
+                    @media (max-width: 575px) {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        padding: 10px;
+                        gap: 16px;
+                    }
+
+                    .profile_otr {
+                        display: flex;
+                        align-items: center;
+                        gap: 16px;
+
+                        &:hover {
+                            .username {
+                                color: $Primary;
+                            }
+                        }
+                    }
+
+                    .profile_img {
+                        width: 40px;
+                        height: 40px;
+                        object-fit: cover;
+                    }
+
+                    .username {
+                        color: $Dark;
+                        transition: .3s;
+                    }
+
+                    .date_otr {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+
+                        svg {
+                            color: $Dark-65;
+                        }
+
+                        span {
+                            color: $Dark-65;
+                        }
+                    }
+
+                    .social_ul {
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+
+                        .social_linkk {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 40px;
+                            height: 40px;
+                            background-color: $Light-Bg;
+                            transition: .3s;
+
+                            &:hover {
+                                background-color: $Primary;
+
+                                svg {
+                                    color: $Dark;
+                                }
+                            }
+
+                            svg {
+                                color: $Dark-65;
+                                transition: .3s;
+                            }
+                        }
+                    }
+                }
+
+                .img_otr {
+                    margin: 48px 0;
+
+                    @media (max-width: 575px) {
+                        margin: 36px 0;
+                    }
+
+                    .detail_img {
+                        width: 100%;
+                        height: 350px;
+                        object-fit: cover;
+
+                        @media (max-width: 575px) {
+                            height: 250px;
+                        }
+                    }
+                }
+
+                .content_heading {
+                    color: $Dark;
+                    margin: 12px 0;
+                }
+
+                .desc {
+                    color: $Dark-65;
+
+                    &.desc1 {
+                        margin-bottom: 12px;
+                    }
+                }
+
+                .tags_otr {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    padding: 16px;
+                    border: 1px solid $Light-Bg2;
+                    margin: 36px 0;
+
+                    @media (max-width: 575px) {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+
+                    .tag_heading {
+                        color: $Dark;
+                    }
+
+                    .linkk_ul {
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        flex: 1;
+                        gap: 8px;
+
+                        .linkk_text {
+                            background-color: $Light-Bg;
+                            color: $Dark;
+                            padding: 6px 12px;
+                            transition: .3s;
+
+                            &:hover {
+                                background-color: $Primary;
+                            }
+                        }
+                    }
+                }
+
+                .review_otr {
+                    .review_heading {
+                        color: $Dark;
+                        margin-bottom: 30px;
+                    }
+
+                    .UserReviewCard_otr {
+                        &:not(:last-child) {
+                            margin-bottom: 24px;
+                        }
+                    }
+                }
+
+                .related_post_otr {
+                    margin-top: 72px;
+
+                    @media (max-width: 992px) {
+                        margin-top: 48px;
+                    }
+
+                    .blog_post_heading {
+                        color: $Dark;
+                        margin-bottom: 30px;
+                    }
+
+                    .row_blog_post {
+                        gap: 24px;
+
+                        .related_post_card {
+                            width: calc(33.333% - 16px);
+                            padding: 0;
+
+                            @media (max-width: 768px) {
+                                width: calc(50% - 12px);
+                            }
+
+                            @media (max-width: 575px) {
+                                width: 100%;
+                            }
+
+                            .img_otr {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .col_sidebar_inr {
+
+                .category_otr,
+                .archives_otr {
+                    background-color: $White;
+                    border: 1px solid $Light-Bg2;
+                    padding: 16px 24px;
+                    margin-bottom: 24px;
+
+                    @media (max-width: 575px) {
+                        padding: 20px;
+                    }
+
+                    .linkk_ul {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 8px;
+                    }
+
+                    .linkk_text {
+                        color: $Dark-65;
+                        transition: .3s;
+
+                        &:hover {
+                            color: $Primary;
+                        }
+                    }
+                }
+
+                .popularPost_otr {
+                    background-color: $White;
+                    border: 1px solid $Light-Bg2;
+                    padding: 16px 24px;
+                    margin-bottom: 24px;
+
+                    @media (max-width: 575px) {
+                        padding: 20px;
+                    }
+
+                    .linkk_ul {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 20px;
+                    }
+
+                    .product_linkk {
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+
+                        &:hover {
+                            .product_text {
+                                color: $Primary;
+                            }
+                        }
+                    }
+
+                    .product_img {
+                        width: 60px;
+                        height: 60px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .product_text {
+                        color: $Dark;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        transition: .3s;
+                    }
+                }
+
+                .tags_otr {
+                    background-color: $White;
+                    border: 1px solid $Light-Bg2;
+                    padding: 16px 24px;
+
+                    @media (max-width: 575px) {
+                        padding: 20px;
+                    }
+
+                    .linkk_ul {
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        gap: 8px;
+                    }
+
+                    .linkk_text {
+                        padding: 6px 12px;
+                        background-color: $Light-Bg;
+                        color: $Dark;
+                        transition: .3s;
+
+                        &:hover {
+                            background-color: $Primary;
+                        }
+                    }
+                }
+
+                .sidebar_heading {
+                    color: $Dark;
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+@import '../../common-styles/variable.scss';
+
+.client_section {
+    padding-top: 128px;
+
+    @media (max-width: 992px) {
+        padding-top: 72px;
+    }
+
+    @media (max-width: 575px) {
+        padding-top: 48px;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: stretch;
+        gap: 24px;
+
+        @media (max-width: 992px) {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+
+        @media (max-width: 768px) {
+            grid-template-columns: auto auto auto;
+        }
+
+        @media (max-width: 575px) {
+            grid-template-columns: auto auto;
+        }
+
+        @media (max-width: 420px) {
+            grid-template-columns: auto;
+        }
+    }
+
+    .logo_otr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        .client_logo {
+            height: 60px;
+            width: auto;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+}
+
+.client_section2 {
+    .row_custom {
+        gap: 24px 0;
+    }
+
+    .col_logo_otr {
+        @media (max-width: 575px) {
+            padding: 0;
+        }
+    }
+
+    .logo_otr {
+        background-color: $White;
+        box-shadow: $Box-Shadow-Custom;
+        padding: 20px;
+        height: 150px;
+
+        @media (max-width: 575px) {
+            height: 120px;
+        }
+    }
+}

@@ -1,0 +1,167 @@
+@import '../../common-styles/variable.scss';
+
+.CheckoutPage_main {
+    .checkout_section {
+        padding: 92px 0 128px 0;
+
+        @media (max-width: 992px) {
+            padding: 72px 0;
+        }
+
+        @media (max-width: 575px) {
+            padding: 48px 0;
+        }
+    }
+
+    .row_custom {
+        @media (max-width: 992px) {
+            gap: 48px 0;
+
+            .col_input_otr,
+            .col_order_otr {
+                padding: 0;
+            }
+        }
+
+        .col_input_inr {
+            .Login_text {
+                color: $Dark-65;
+                margin-bottom: 40px;
+                transition: .3s;
+
+                &:hover {
+                    color: $Primary;
+                }
+            }
+
+            .form_heading {
+                color: $Dark;
+            }
+
+            .form_desc {
+                color: $Dark-65;
+                margin: 12px 0 24px;
+            }
+
+            .input_main {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+
+                @media (max-width: 575px) {
+                    flex-direction: column;
+                    gap: 0;
+                }
+
+                .input_otr {
+                    width: calc(50% - 12px);
+
+                    @media (max-width: 575px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .form_input {
+                width: 100%;
+                margin-bottom: 24px;
+            }
+
+            .textarea_otr {
+                .text_area {
+                    width: 100%;
+                    height: 110px;
+                    resize: none;
+                }
+            }
+
+            .check_box_main {
+                margin: 24px 0;
+
+                .check_box_inr {
+                    padding: 0;
+                    gap: 12px;
+                }
+            }
+
+            .coupon_text {
+                color: $Dark-65;
+
+                .linkk {
+                    display: inline;
+                    color: $Dark;
+                    transition: .3s;
+
+                    &:hover {
+                        color: $Primary;
+                    }
+                }
+            }
+        }
+
+        .col_order_inr {
+            padding: 24px 32px;
+            border: 1px solid $Light-Bg2;
+
+            @media (max-width: 575px) {
+                padding: 20px;
+            }
+
+            .order_heading {
+                color: $Dark;
+            }
+
+            .subtotal_otr {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px 0;
+                border-bottom: 1px solid $Light-Bg2;
+
+                .subtotal_text {
+                    color: $Dark-65;
+                }
+
+                .subtotal_price {
+                    color: $Dark;
+                }
+            }
+
+            .check_box_main {
+                margin: 20px 0;
+
+                .check_box_inr {
+                    padding-left: 0;
+                    gap: 12px;
+                }
+            }
+
+            .payment_ul {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 16px;
+
+                .payment_linkk {
+                    display: flex;
+                }
+
+                .payment_img {
+                    width: 52px;
+                    height: 52px;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+
+            .action_otr {
+                display: flex;
+                margin-top: 24px;
+
+                .primary_btn {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

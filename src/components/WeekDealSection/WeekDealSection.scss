@@ -1,0 +1,74 @@
+@import '../../common-styles/variable.scss';
+
+.weekDeal_section {
+    margin: 128px 0;
+
+    @media (max-width: 992px) {
+        margin: 72px 0;
+    }
+
+    @media (max-width: 575px) {
+        margin: 48px 0;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 72px;
+
+        @media (max-width: 992px) {
+            margin-bottom: 48px;
+        }
+
+        @media (max-width: 575px) {
+            margin-bottom: 36px;
+            gap: 24px;
+        }
+
+        .wrapper_heading {
+            color: $Dark;
+        }
+
+        .line {
+            width: 100%;
+            height: 1px;
+            background-color: $Light-Bg2;
+            flex: 1;
+        }
+    }
+
+    .deal_slider {
+        .col_product_otr {
+            width: 100%;
+        }
+
+        .swiper-button-prev {
+            width: 32px;
+            height: 32px;
+            left: 20px;
+            background-image: url(../../img/arrow-left.svg);
+            background-size: cover;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        .swiper-button-next {
+            width: 32px;
+            height: 32px;
+            right: 20px;
+            background-image: url(../../img/arrow-right.svg);
+            background-size: cover;
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    .row_custom {
+        gap: 24px 0;
+    }
+}

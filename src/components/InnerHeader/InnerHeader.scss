@@ -1,0 +1,55 @@
+@import '../../common-styles/variable.scss';
+
+.inner_header {
+    position: relative;
+    background-color: $Dark;
+    padding: 96px 0;
+    overflow: hidden;
+
+    .shape_img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .wrapper {
+        position: relative;
+        text-align: center;
+        z-index: 5;
+
+        .heading {
+            color: $White;
+        }
+    }
+}
+
+.bredcrums_otr {
+    padding: 12px 0;
+    border-bottom: 1px solid $Light-Bg2;
+
+    .wrapper {
+
+        .breadcrumb {
+            margin: 0;
+        }
+
+        .home_linkk {
+            color: $Dark;
+            transition: .3s;
+
+            &:hover {
+                color: $Primary;
+            }
+        }
+
+        .active {
+            color: $Dark-40;
+
+            &::before {
+                color: $Dark-40;
+            }
+        }
+    }
+}

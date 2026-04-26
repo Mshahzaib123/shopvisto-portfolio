@@ -1,0 +1,33 @@
+@import '../../common-styles/variable.scss';
+
+.check_box_main {
+    .check_box_inr {
+        display: flex;
+    }
+
+    .form-check-input {
+        width: 20px;
+        height: 20px;
+        border-radius: 0;
+        margin: 0;
+        background-color: $Light-Bg2;
+        border: 1px solid transparent;
+
+        &:focus {
+            box-shadow: none;
+            border: 1px solid $Primary;
+        }
+    }
+
+    .form-check-input:checked[type=checkbox],
+    .form-check-input:checked[type=radio] {
+        background-image: url(../../img/check_icon.svg);
+        background-position: center;
+        background-size: contain;
+    }
+
+    .form-check-input:checked {
+        background-color: $Primary;
+        border: 1px solid $Primary;
+    }
+}

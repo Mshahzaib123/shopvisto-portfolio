@@ -1,0 +1,448 @@
+@import '../../common-styles/variable.scss';
+
+.ShopPage_main {
+    .shop_section_main {
+        padding: 96px 0 128px 0;
+
+        @media (max-width: 992px) {
+            padding: 72px 0;
+        }
+
+        @media (max-width: 575px) {
+            padding: 48px 0;
+        }
+    }
+
+    .row_custom {
+        @media (max-width: 575px) {
+            gap: 24px 0;
+
+            .col_sidebar_otr {
+                padding: 0;
+            }
+        }
+
+        .col_sidebar_inr {
+            .box_otr {
+                border: 1px solid $Light-Bg2;
+                padding: 16px 24px;
+
+                @media (max-width: 575px) {
+                    padding: 16px;
+                }
+
+                .sidebar_heading {
+                    color: $Dark;
+                    margin-bottom: 12px;
+                }
+            }
+
+            .category_otr {
+                .linkk_ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 8px;
+                }
+
+                .linkk_text {
+                    color: $Dark;
+                    transition: .3s;
+
+                    &:hover {
+                        color: $Primary;
+                    }
+                }
+            }
+
+            .price_otr {
+                margin: 24px 0;
+
+                .minmax_price {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+
+                    @media (max-width: 1200px) {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 4px;
+                    }
+                }
+
+                .min_price_otr,
+                .max_price_otr {
+                    display: flex;
+                    align-items: center;
+                    background-color: $Light-Bg;
+
+                    .dollar_text {
+                        color: $Dark-65;
+                        line-height: 36px;
+                        padding: 0 16px;
+                        border-right: 1px solid $Light-Bg2;
+                    }
+
+                    .input_otr {
+                        flex: 1;
+
+                        .White_Input {
+                            width: 60px;
+                            padding: 6px 12px;
+                            border: transparent;
+                            text-align: center;
+                            background-color: $Light-Bg;
+                        }
+
+                        input[type=number] {
+                            -moz-appearance: textfield;
+                        }
+
+                        input::-webkit-outer-spin-button,
+                        input::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
+                    }
+                }
+
+                .minus_text {
+                    color: $Dark;
+                }
+            }
+
+            .color_otr {
+                .Check_box {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+
+                .form-check-inline {
+                    display: inline-flex;
+                    margin: 0;
+
+                    &:nth-child(1) {
+                        .form-check-input {
+                            background-color: $Primary;
+
+                            &:focus {
+                                border: 1px solid $Primary;
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        .form-check-input {
+                            background-color: $Dark;
+
+                            &:focus {
+                                border: 1px solid $Dark;
+                            }
+                        }
+
+                        .form-check-input:checked {
+                            background-color: $Dark;
+                            border: 1px solid $Dark;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        .form-check-input {
+                            background-color: #2B2591;
+
+                            &:focus {
+                                border: 1px solid #2B2591;
+                            }
+                        }
+
+                        .form-check-input:checked {
+                            background-color: #2B2591;
+                            border: 1px solid #2B2591;
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        .form-check-input {
+                            background-color: $Dark-65;
+
+                            &:focus {
+                                border: 1px solid $Dark;
+                            }
+                        }
+
+                        .form-check-input:checked {
+                            background-color: $Dark-65;
+                            border: 1px solid $Dark-65;
+                        }
+                    }
+
+                    &:nth-child(5) {
+                        .form-check-input {
+                            background-color: $Dark-40;
+
+                            &:focus {
+                                border: 1px solid $Dark;
+                            }
+                        }
+
+                        .form-check-input:checked {
+                            background-color: $Dark-40;
+                            border: 1px solid $Dark-40;
+                        }
+                    }
+                }
+            }
+
+            .size_otr {
+                margin: 24px 0;
+
+                .Check_box {
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .form-check-inline {
+                        padding: 0;
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+                    }
+                }
+            }
+
+            .rating_otr {
+                .Check_box {
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .form-check-inline {
+                        padding: 0;
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+                    }
+
+                    .form-check-label {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+
+                        svg {
+                            color: $Primary;
+                        }
+
+                        .star_text {
+                            color: $Dark-65;
+                        }
+                    }
+                }
+            }
+        }
+
+        .col_cards_otr {
+            padding: 0;
+
+            .filter_grid_list {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: $Light-Bg;
+                width: calc(100% - 24px);
+                margin: 0 12px 24px 12px;
+                padding: 12px 24px;
+                z-index: 20;
+
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 12px;
+                }
+
+                @media (max-width: 575px) {
+                    margin: 0 0 24px 0;
+                    width: 100%;
+                }
+
+                .sort_otr {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+
+                    .sort_text {
+                        color: $Dark-65;
+                    }
+
+                    .select_main {
+                        flex: 1;
+
+                        .drop_li {
+                            svg {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .grid_list_otr {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+
+                    .icon_otr {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 42px;
+                        height: 42px;
+                        background-color: $White;
+                        cursor: pointer;
+                        transition: .5s;
+
+                        svg {
+                            color: $Dark;
+                            transition: .5s;
+                        }
+                    }
+
+                    .grid_active,
+                    .list_active {
+                        background-color: $Dark;
+                        transition: .5s;
+
+                        svg {
+                            color: $Primary;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+
+            .col_product_otr {
+                transition: .5s;
+            }
+
+            .col_cards_inr {
+                gap: 24px 0;
+            }
+
+            .ListView {
+                transition: .5s;
+                width: 100%;
+
+                .col_product_inr {
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+
+                    @media (max-width: 768px) {
+                        gap: 16px;
+                    }
+
+                    @media (max-width: 420px) {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                }
+
+                .img_otr {
+                    width: 350px;
+                    overflow: hidden;
+
+                    @media (max-width: 768px) and (min-width: 575px) {
+                        width: 150px;
+                        height: 200px;
+                    }
+
+                    @media (max-width: 575px) {
+                        width: 200px;
+                        height: 200px;
+                    }
+
+                    @media (max-width: 420px) {
+                        width: 100%;
+                        height: 250px;
+                    }
+
+                    .card_img {
+                        object-position: center;
+                    }
+
+                    .tag_otr {
+                        top: 0;
+                        left: 0;
+                    }
+                }
+
+                .share_popup_main {
+                    bottom: 16px;
+                    left: 16px;
+                    top: auto;
+                    right: auto;
+                }
+
+                .content_otr {
+                    width: 100%;
+                    flex: 1;
+                    padding: 0;
+
+                    .card_heading {
+                        font-size: 20px;
+                        line-height: 32px;
+                        margin: 14px 0 8px 0;
+
+                        @media (max-width: 768px) {
+                            font-size: 16px;
+                            line-height: 28px;
+                        }
+                    }
+
+                    .star_li {
+                        svg {
+                            width: 24px;
+                            height: 24px;
+
+                            @media (max-width: 768px) {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+
+                    .price_text {
+                        font-size: 18px;
+                        line-height: 30px;
+
+                        @media (max-width: 768px) {
+                            font-size: 16px;
+                            line-height: 28px;
+                        }
+
+                        .price_inr {
+                            font-size: 16px;
+                            line-height: 28px;
+
+                            @media (max-width: 768px) {
+                                font-size: 14px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .action_otr {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 72px;
+            }
+        }
+    }
+}

@@ -1,0 +1,182 @@
+@import '../../common-styles/variable.scss';
+
+.signup_page {
+    .signup_section {
+        padding: 128px 0;
+
+        @media (max-width: 992px) {
+            padding: 72px 0;
+        }
+
+        @media (max-width: 575px) {
+            padding: 48px 0;
+        }
+
+        .wrapper {
+            text-align: center;
+            margin-bottom: 72px;
+
+            @media (max-width: 575px) {
+                margin-bottom: 48px;
+            }
+
+            .form_heading {
+                color: $Dark;
+                margin-bottom: 16px;
+            }
+
+            .form_desc {
+                color: $Dark-65;
+            }
+        }
+
+        .row_custom {
+            justify-content: center;
+
+            .col_form_otr {
+                @media (max-width: 575px) {
+                    padding: 0;
+                }
+            }
+
+            .col_form_inr {
+                background-color: $White;
+                box-shadow: $Box-Shadow-Custom;
+                padding: 40px;
+
+                @media (max-width: 575px) {
+                    padding: 20px;
+                }
+            }
+
+            .inputs_main {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+
+                @media (max-width: 575px) {
+                    flex-direction: column;
+                    gap: 0;
+                }
+
+                .input_otr {
+                    width: 50%;
+
+                    @media (max-width: 575px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .other_signup {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                margin-bottom: 24px;
+
+                @media (max-width: 1400px) {
+                    flex-direction: column;
+                }
+
+                .signup_button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 12px;
+                    width: 50%;
+                    padding: 13px 24px;
+                    background-color: transparent;
+                    border: 1px solid $Dark;
+                    transition: .3s;
+
+                    @media (max-width: 1400px) {
+                        width: 100%;
+                    }
+
+                    @media (max-width: 575px) {
+                        padding: 13px 16px;
+                    }
+
+                    &:hover {
+                        background-color: $Dark;
+                        border: 1px solid transparent;
+
+                        svg {
+                            color: $White;
+                        }
+
+                        .button_text {
+                            color: $White;
+                        }
+                    }
+
+                    svg {
+                        color: $Dark;
+                        transition: .3s;
+                    }
+
+                    .button_text {
+                        color: $Dark;
+                        transition: .3s;
+                    }
+                }
+            }
+
+            .input_form {
+                width: 100%;
+                margin-bottom: 24px;
+            }
+
+            .check_Linkk {
+                display: flex;
+                align-items: center;
+
+                @media (max-width: 575px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 12px;
+                }
+
+                .check_box_inr {
+                    padding: 0;
+                    gap: 12px;
+                    min-height: auto;
+                }
+
+                .check_linkk {
+                    color: $Dark;
+                    margin-left: 3px;
+
+                    a {
+                        display: inline;
+                        color: $Dark;
+                        transition: .3s;
+
+                        &:hover {
+                            color: $Primary;
+                        }
+                    }
+                }
+            }
+
+            .form_btn {
+                width: 100%;
+                margin: 24px 0;
+            }
+
+            .signin_text {
+                text-align: center;
+
+                .text_linkk {
+                    display: inline;
+                    color: $Dark;
+                    transition: .3s;
+
+                    &:hover {
+                        color: $Primary;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,119 @@
+@import '../../common-styles/variable.scss';
+
+.Header_main2 {
+    .top_bar_main {
+        .wrapper {
+            display: flex;
+            align-items: stretch;
+        }
+
+        .contact_otr {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            gap: 8px;
+
+            &:hover {
+                .contact_text {
+                    color: $White;
+                }
+            }
+
+            &:nth-child(2) {
+                justify-content: center;
+            }
+
+            &:nth-child(3) {
+                justify-content: flex-end;
+            }
+
+            svg {
+                color: $Primary;
+                transition: .3s;
+            }
+
+            .contact_text {
+                color: $Light-Bg2;
+                transition: .3s;
+            }
+        }
+    }
+
+    .menu_bar {
+        padding: 20px 0;
+
+        .wrapper {
+            gap: 60px;
+        }
+    }
+
+    .col_search_inr {
+        flex: 1;
+    }
+
+    .category_main {
+        padding: 20px 0;
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .col_categories_inr {
+            width: 240px;
+        }
+
+        .language_otr {
+            position: relative;
+
+            .language_header {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 14px 24px;
+                background-color: $White;
+                border: 1px solid $Light-Bg2;
+                transition: .3s;
+                cursor: pointer;
+
+                .languate_text {
+                    color: $Dark;
+                    transition: .3s;
+                }
+
+                svg {
+                    color: $Dark;
+                    transition: .3s;
+                }
+            }
+
+            .language_drop_down {
+                position: absolute;
+                right: 0;
+                top: 56px;
+                background-color: $White;
+                padding: 24px 32px;
+                width: 240px;
+                box-shadow: $Box-Shadow-Custom2;
+                z-index: 10;
+
+                .language_ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 8px;
+                }
+
+                .language_linkk {
+                    color: $Dark;
+                    transition: .3s;
+
+                    &:hover {
+                        color: $Primary;
+                    }
+                }
+            }
+        }
+    }
+}

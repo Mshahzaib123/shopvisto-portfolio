@@ -1,0 +1,172 @@
+@import '../../common-styles/variable.scss';
+
+.ProductDetail_main {
+    .ProductDetail_section {
+        padding: 96px 0 128px 0;
+
+        @media (max-width: 992px) {
+            padding: 72px 0;
+        }
+
+        @media (max-width: 575px) {
+            padding: 48px 0;
+        }
+
+        .product_modal_content {
+            padding: 0;
+            max-height: initial !important;
+            height: auto;
+
+            .product_slider2 {
+                .img_otr {
+                    height: 350px;
+
+                    @media (max-width: 575px) {
+                        height: 250px;
+                    }
+                }
+            }
+        }
+    }
+
+    .more_detail {
+        padding: 128px 0;
+        background-color: $Light-Bg;
+
+        @media (max-width: 992px) {
+            padding: 72px 0;
+        }
+
+        @media (max-width: 575px) {
+            padding: 48px 0;
+        }
+
+        .more_detail_row {
+            @media (max-width: 992px) {
+                gap: 48px 0;
+
+                .content_otr,
+                .col_cards_otr {
+                    padding: 0;
+                }
+            }
+
+            .content_inr {
+                padding-right: 48px;
+
+                @media (max-width: 992px) {
+                    padding-right: 0;
+                }
+
+                .content_heading {
+                    color: $Dark;
+                }
+
+                .desc {
+                    color: $Dark;
+                }
+
+                .desc1 {
+                    margin: 16px 0 12px 0;
+                }
+
+                .satisfaction_wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 16px 0;
+                    padding: 24px 32px;
+                    background-color: $White;
+                    border: 1px solid $Light-Bg2;
+                    margin-top: 40px;
+
+                    @media (max-width: 1200px) {
+                        padding: 20px;
+                    }
+
+                    @media (max-width: 575px) {
+                        margin-top: 24px;
+                    }
+                }
+
+                .Satisfaction_otr {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    svg {
+                        color: $Primary;
+
+                        @media (max-width: 575px) {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+
+                    .Satisfaction_heading {
+                        color: $Dark;
+
+                        @media (max-width: 575px) {
+                            font-size: 16px;
+                            line-height: 28px;
+                        }
+                    }
+                }
+            }
+
+            .col_cards_inr {
+                .reviews_main {
+                    margin-bottom: 72px;
+
+                    @media (max-width: 992px) {
+                        margin-bottom: 48px;
+                    }
+                }
+
+                .review_heading {
+                    color: $Dark;
+                    margin-bottom: 24px;
+                }
+
+                .col_review_otr {
+                    &:not(:last-child) {
+                        margin-bottom: 24px;
+                    }
+                }
+
+                .leave_review {
+                    .form_main {
+                        margin: 0;
+                    }
+
+                    .input_otr {
+                        margin-bottom: 24px;
+
+                        .White_Input {
+                            width: 100%;
+                        }
+
+                        .text_area {
+                            height: 120px;
+                            resize: none;
+                        }
+                    }
+
+                    .inputs_main {
+                        display: flex;
+                        align-items: center;
+                        gap: 24px;
+
+                        .input_otr {
+                            width: calc(50% - 12px);
+                        }
+                    }
+
+                    .primary_btn {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

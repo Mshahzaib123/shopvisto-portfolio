@@ -1,0 +1,76 @@
+@import '../../common-styles/variable.scss';
+
+.select_main {
+    position: relative;
+    width: 100%;
+
+    .dd_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: $White;
+        border: 1px solid $Light-Bg2;
+        padding: 8px 16px;
+        font-size: $font-size-16px;
+        line-height: $line-height-24px;
+        font-family: $font-family-SemiBold;
+        gap: 12px;
+        cursor: pointer;
+
+        .dd_header_title {
+            color: $Dark;
+        }
+
+        svg {
+            color: $Dark;
+        }
+    }
+
+    .dd_list_otr {
+        position: absolute;
+        left: 0;
+        top: 50px;
+        width: 240px;
+        background-color: $White;
+        box-shadow: $Box-Shadow-Custom2;
+        padding: 12px 16px;
+        z-index: 5;
+
+        .drop_ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .drop_li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            cursor: pointer;
+
+            &:hover {
+                p {
+                    color: $Primary;
+                }
+
+                svg {
+                    color: $Primary;
+                    transform: rotate(180deg);
+                }
+            }
+
+            p {
+                color: $Dark;
+                transition: .3s;
+            }
+
+            svg {
+                color: $Dark;
+                transition: .3s;
+            }
+        }
+    }
+}

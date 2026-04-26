@@ -1,0 +1,22 @@
+@import '../../common-styles/variable.scss';
+
+.White_Input {
+    padding: 13px 24px;
+    font-size: $font-size-16px;
+    line-height: $line-height-24px;
+    font-family: $font-family-SemiBold;
+    background-color: $White;
+    color: $Dark;
+    border: 1px solid $Light-Bg2;
+    transition: .3s;
+
+    &:focus {
+        border: 1px solid transparent;
+        outline: none;
+        box-shadow: $Box-Shadow-Custom;
+    }
+
+    &::placeholder {
+        color: $Light-Bg2;
+    }
+}

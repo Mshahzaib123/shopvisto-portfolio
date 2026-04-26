@@ -1,0 +1,33 @@
+@import '../../common-styles/variable.scss';
+
+.check_otr {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+
+    input[type="checkbox"] {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+
+    .checkbox {
+        display: inline-block;
+        height: 24px;
+        width: 24px;
+        background-color: #fff;
+        border: 2px solid $Dark2;
+        margin-right: 0px;
+
+        &.checkbox_active {
+            background-image: url(../../img/check_icon.svg);
+            background-size: contain;
+            background-position: center;
+        }
+    }
+}

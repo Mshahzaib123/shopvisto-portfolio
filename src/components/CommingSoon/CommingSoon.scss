@@ -1,0 +1,56 @@
+@import '../../common-styles/variable.scss';
+
+.CommingSoon_main {
+    .CommingSoon_section {
+        margin: 96px 0 128px 0;
+
+        @media (max-width: 992px) {
+            margin: 72px 0;
+        }
+
+        @media (max-width: 575px) {
+            margin: 48px 0;
+        }
+    }
+
+    .row_custom {
+        justify-content: center;
+
+        @media (max-width: 575px) {
+            .col_comming_otr {
+                padding: 0;
+            }
+        }
+
+        .col_comming_inr {
+            .comming_img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+
+            .comming_desc {
+                color: $Dark-65;
+                text-align: center;
+                margin: 24px 0 40px 0;
+            }
+
+            .email_action_otr {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 24px;
+
+                @media (max-width: 575px) {
+                    flex-direction: column;
+                }
+            }
+
+            .comming_desc2 {
+                color: $Dark-65;
+                text-align: center;
+                margin-top: 40px;
+            }
+        }
+    }
+}

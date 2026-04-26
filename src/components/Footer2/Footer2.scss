@@ -1,0 +1,126 @@
+@import '../../common-styles/variable.scss';
+
+.footer_main2 {
+    position: relative;
+    background-color: transparent;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: calc(100% - 230px);
+        background-color: $Light-Bg;
+        z-index: -1;
+    }
+
+    .cta_mian {
+        background-color: $Dark;
+        padding: 96px 72px 112px 72px;
+        text-align: center;
+
+        .heading_cta {
+            color: $White;
+        }
+
+        .cta_desc {
+            color: $Light-Bg2;
+            margin: 16px 0 36px 0;
+        }
+
+        .input_action_otr {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+
+            .input {
+                width: 300px;
+            }
+
+            .sub_btn {
+                &:hover {
+                    background-color: $Dark2;
+                    color: $White;
+                }
+            }
+        }
+    }
+
+    .row_custom {
+        padding: 96px 0;
+
+        .col_logo_inr {
+            .social_heading {
+                color: $Dark;
+            }
+
+            .social_linkk {
+                border: 1px solid $Dark-25;
+
+                svg {
+                    color: $Dark-25;
+                }
+            }
+        }
+
+        .col_linkk_inr {
+            .linkk_heading {
+                color: $Dark;
+            }
+
+            .linkk_text {
+                color: $Dark-65;
+            }
+        }
+    }
+
+    .col_payment_inr {
+        .payment_heading {
+            color: $Dark;
+            margin-bottom: 12px;
+        }
+
+        .payment_ul {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0 16px;
+        }
+
+        .payment_img {
+            width: 52px;
+            height: 52px;
+            object-fit: contain;
+        }
+    }
+
+    .copy_right_otr {
+        margin: 0;
+        border-top: 1px solid $Light-Bg2;
+
+        .copy_text {
+            color: $Dark-65;
+
+            .text_linkk {
+                color: $Dark;
+
+                &:hover {
+                    color: $Primary;
+                }
+            }
+        }
+
+        .logo_otr {
+            display: flex;
+
+            .logo_img {
+                height: 24px;
+                width: auto;
+                object-fit: contain;
+                object-position: left;
+            }
+        }
+    }
+}

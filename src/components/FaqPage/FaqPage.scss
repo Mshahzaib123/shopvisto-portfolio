@@ -1,0 +1,116 @@
+@import '../../common-styles/variable.scss';
+
+.Accordion_item {
+    border: none !important;
+    border-radius: 0 !important;
+    transition: .3s;
+
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    &:hover {
+        box-shadow: $Box-Shadow-Custom;
+
+        .accordion-button {
+            border: 1px solid transparent;
+        }
+    }
+
+    .accordion-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: $font-size-20px;
+        line-height: $line-height-32px;
+        font-family: $font-family-SemiBold;
+        padding: 10px 24px;
+        border-radius: 0;
+        color: $Dark;
+        transition: .3s;
+        border: 1px solid $Light-Bg2;
+        width: 100%;
+
+        @media (max-width: 575px) {
+            padding: 8px 16px;
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+        svg {
+            transition: .3s;
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &::after {
+            display: none;
+        }
+
+        &:not(.collapsed) {
+            box-shadow: none;
+            background-color: $Dark;
+            color: $White;
+            border-radius: 0;
+
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .accordion-body {
+        border-left: 1px solid $Light-Bg2;
+        border-right: 1px solid $Light-Bg2;
+        border-bottom: 1px solid $Light-Bg2;
+        padding: 16px 24px;
+        font-size: $font-size-16px;
+        line-height: $line-height-28px;
+        font-family: $font-family-Medium;
+        color: $Dark-65;
+    }
+}
+
+.FaqPage_main {
+    .faq_main {
+        padding: 128px 0;
+
+        @media (max-width: 992px) {
+            padding: 72px 0;
+        }
+
+        @media (max-width: 575px) {
+            padding: 48px 0;
+        }
+
+        .wrapper {
+            text-align: center;
+            margin-bottom: 72px;
+
+            @media (max-width: 992px) {
+                margin-bottom: 48px;
+            }
+
+            .wrapper_heading {
+                color: $Dark;
+                margin-bottom: 16px;
+            }
+
+            .wrapper_desc {
+                color: $Dark-65;
+            }
+        }
+
+        .row_custom {
+            justify-content: center;
+
+            @media (max-width: 992px) {
+                .col_accordion_otr {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

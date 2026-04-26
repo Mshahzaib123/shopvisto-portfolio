@@ -1,0 +1,92 @@
+@import '../../common-styles/variable.scss';
+
+.cta_main {
+    margin: 128px 0;
+
+    @media (max-width: 992px) {
+        margin: 72px 0;
+    }
+
+    @media (max-width: 575px) {
+        margin: 48px 0;
+    }
+
+    .row_custom {
+        padding: 40px 72px;
+        align-items: center;
+        background-color: $Light-Bg;
+
+        @media (max-width: 992px) {
+            padding: 36px;
+            gap: 40px;
+        }
+
+        @media (max-width: 575px) {
+            padding: 20px;
+
+            .col_content_otr {
+                padding: 0;
+            }
+
+            .col_img_otr {
+                padding: 0;
+            }
+        }
+
+        .col_content_inr {
+            .cta_heading {
+                color: $Dark;
+            }
+
+            .cta_desc {
+                color: $Dark-65;
+                margin: 16px 0 30px 0;
+
+                @media (max-width: 575px) {
+                    margin: 12px 0 24px 0;
+                }
+            }
+
+            .form_main {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+
+                @media (max-width: 575px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                .input_otr {
+                    flex: 1;
+
+                    @media (max-width: 575px) {
+                        width: 100%;
+                    }
+                }
+
+                .email_input {
+                    width: 100%;
+                }
+            }
+        }
+
+        .col_img_inr {
+            padding-left: 30px;
+
+            @media (max-width: 992px) {
+                padding-left: 0;
+            }
+
+            .cta_img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+
+                @media (max-width: 575px) {
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
