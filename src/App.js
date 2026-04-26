@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Routes, Route } from "react-router-dom";
 import './App.scss';
 import AboutPage from './components/AboutPage/AboutPage';
@@ -24,29 +24,11 @@ import ProductDetail from './components/ProductDetail/ProductDetail';
 import ShopPage from './components/ShopPage/ShopPage';
 import SignUp from './components/SignUp/SignUp';
 import WhishListPage from './components/WhishListPage/WhishListPage';
-import { Spinner } from 'reactstrap';
-import axios from 'axios';
-
 import FilterPage from './components/FilterPage/FilterPage';
 
 function App() {
-  const [data, setData] = useState([]);
-  const [IsLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    axios.get('https://vistothemes.com/themes/shop-visto/')
-    .then((re) => {
-      setIsLoading(false)
-      setData(re.data.result)
-    })
-  }, [])
-  console.log(data);
   return (
     <>
-      {IsLoading && (
-        <div className="loader">
-          <Spinner color="white" />
-        </div>
-      )}
       <Header
         WishProductNum={6}
         AddProductNum={6}

@@ -7,6 +7,7 @@ function PopularCard(props) {
         <div className='col-lg-2 col-md-3 col-sm-4 col_popularcard_otr'>
             <div className='col_popularcard_inr'>
                 <img className='card_img' src={props.CardImg} alt='img' />
+                {/* eslint-disable-next-line jsx-a11y/no-distracting-elements */}
                 <marquee className="marquee_main" scrollamount="3" direction="left">
                     <ul className='marquee_ul'>
                         <li className='marquee_li'>
