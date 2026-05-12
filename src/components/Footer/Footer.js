@@ -152,19 +152,19 @@ function Footer() {
                             <Link className='contact_otr'>
                                 <p className='heading-xsm contact_text1'>Address</p>
                                 <p className='heading-sb contact_text2'>
-                                    Rehman Village Phase 2 street no 8 house no 172, Near Faisalabad Internal Airport
+                                    Main Jhang Road, Faisalabad, Pakistan
                                 </p>
                             </Link>
-                            <a className='contact_otr' href="tel:03236651905">
+                            <a className='contact_otr' href="tel:03708446009">
                                 <p className='heading-xsm contact_text1'>Phone</p>
                                 <p className='heading-sb contact_text2'>
-                                    0323-6651905
+                                    03708446009
                                 </p>
                             </a>
-                            <a className='contact_otr' href="mailto:vistothemes@gmail.com">
+                            <a className='contact_otr' href="mailto:mshahzaibzahid0@gmail.com">
                                 <p className='heading-xsm contact_text1'>Email</p>
                                 <p className='heading-sb contact_text2'>
-                                    vistothemes@gmail.com
+                                    mshahzaibzahid0@gmail.com
                                 </p>
                             </a>
                         </div>
@@ -209,7 +209,7 @@ function Footer() {
                 </div>
                 <div className='copy_right_otr'>
                     <p className='heading-sm copy_text'>
-                        © 2021 by <a className='text_linkk' href="https://vistothemes.com/" target="_blank" rel="noopener noreferrer">Vistothemes</a> • All rights reserved.
+                        © 2021 by <a className='text_linkk' href="/" target="_blank" rel="noopener noreferrer">Vistothemes</a> • All rights reserved.
                     </p>
                     <div className='language_otr'>
                         <ThemeSelect
