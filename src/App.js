@@ -1,5 +1,6 @@
-import React from 'react';
-import { Routes, Route } from "react-router-dom";
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { Routes, Route, useLocation } from "react-router-dom";
+import { Spinner } from 'react-bootstrap';
 import './App.scss';
 import AboutPage from './components/AboutPage/AboutPage';
 import BlogDetailsPage from './components/BlogDetailsPage/BlogDetailsPage';
@@ -27,8 +28,31 @@ import WhishListPage from './components/WhishListPage/WhishListPage';
 import FilterPage from './components/FilterPage/FilterPage';
 
 function App() {
+  const location = useLocation();
+  const [routeLoading, setRouteLoading] = useState(false);
+  const isFirstMount = useRef(true);
+
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }, [location.pathname]);
+
+  useEffect(() => {
+    if (isFirstMount.current) {
+      isFirstMount.current = false;
+      return;
+    }
+    setRouteLoading(true);
+    const id = window.setTimeout(() => setRouteLoading(false), 400);
+    return () => window.clearTimeout(id);
+  }, [location.pathname]);
+
   return (
     <>
+      {routeLoading && (
+        <div className="loader" role="status" aria-busy="true" aria-live="polite">
+          <Spinner animation="border" variant="light" />
+        </div>
+      )}
       <Header
         WishProductNum={6}
         AddProductNum={6}
